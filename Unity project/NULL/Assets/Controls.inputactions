@@ -1,0 +1,54 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "New action map",
+            "id": "d4760e07-aa03-41b9-af60-cd55ecfc8f67",
+            "actions": [
+                {
+                    "name": "gravity",
+                    "type": "Value",
+                    "id": "021fcd7f-2e1c-4e1d-9897-8b9290b2342f",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "touch",
+                    "type": "Button",
+                    "id": "8ba597d1-e36f-4b98-86a1-88df2feb00f0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b2ac0562-ea6c-4eb6-b7aa-44dcc5b2cb5a",
+                    "path": "<Accelerometer>/acceleration",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "gravity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d065b3d6-bc3e-4032-be7b-3c2506cbba1b",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "touch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
