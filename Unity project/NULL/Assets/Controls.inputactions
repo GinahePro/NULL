@@ -6,7 +6,7 @@
             "id": "d4760e07-aa03-41b9-af60-cd55ecfc8f67",
             "actions": [
                 {
-                    "name": "gravity",
+                    "name": "Gyroscope",
                     "type": "Value",
                     "id": "021fcd7f-2e1c-4e1d-9897-8b9290b2342f",
                     "expectedControlType": "Vector3",
@@ -15,35 +15,35 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "touch",
-                    "type": "Button",
-                    "id": "8ba597d1-e36f-4b98-86a1-88df2feb00f0",
-                    "expectedControlType": "Button",
+                    "name": "Swipe",
+                    "type": "Value",
+                    "id": "513da51b-e2f9-4b72-a735-e2ac8200a554",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "b2ac0562-ea6c-4eb6-b7aa-44dcc5b2cb5a",
-                    "path": "<Accelerometer>/acceleration",
+                    "path": "<Gyroscope>/angularVelocity",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "gravity",
+                    "action": "Gyroscope",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "d065b3d6-bc3e-4032-be7b-3c2506cbba1b",
-                    "path": "<Touchscreen>/Press",
+                    "id": "574949ad-8daa-452d-842c-1f80fccea2bc",
+                    "path": "<Touchscreen>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "touch",
+                    "action": "Swipe",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
