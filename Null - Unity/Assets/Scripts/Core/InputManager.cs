@@ -21,9 +21,9 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (AttitudeSensor.current != null)
+        if (AttitudeSensor.current == null)
         {
-            Debug.Log("Ok");
+            Debug.Log("Not connected");
         }
         else
         {
