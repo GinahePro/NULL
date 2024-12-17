@@ -228,6 +228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a740fea16f6e666429be33e8fe91a8b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  input: {fileID: 72884401}
+  camTransform: {fileID: 72884399}
 --- !u!114 &72884401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 329ccff5b3a43114b8a3735f8cd64ba3, type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -252,10 +254,18 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 021fcd7f-2e1c-4e1d-9897-8b9290b2342f
+    m_ActionName: BaseActionMap/Orientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 513da51b-e2f9-4b72-a735-e2ac8200a554
+    m_ActionName: BaseActionMap/Swipe[/Device Simulator Touchscreen/delta]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: New action map
+  m_DefaultActionMap: BaseActionMap
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1 &136686911
