@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class test : MonoBehaviour
+public class InputManager : MonoBehaviour
 {
     [SerializeField] private PlayerInput input;
     [SerializeField] private Transform camTransform;
@@ -21,7 +21,19 @@ public class test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (AttitudeSensor.current != null)
+        {
+            Debug.Log("Ok");
+        }
+        else
+        {
+            if (!AttitudeSensor.current.enabled)
+            {
+
+
+                InputSystem.EnableDevice(AttitudeSensor.current);
+            }
+        }
     }
 
     private void OnOrientation(InputAction.CallbackContext ctx)
