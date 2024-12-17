@@ -38,6 +38,17 @@
                 },
                 {
                     "name": "",
+                    "id": "795bef42-74dd-4d79-8094-511fefe11efa",
+                    "path": "<XRHMD>/deviceRotation",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Orientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "574949ad-8daa-452d-842c-1f80fccea2bc",
                     "path": "<Touchscreen>/delta",
                     "interactions": "",
