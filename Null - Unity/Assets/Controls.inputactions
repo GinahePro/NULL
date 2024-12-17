@@ -28,21 +28,10 @@
                 {
                     "name": "",
                     "id": "b2ac0562-ea6c-4eb6-b7aa-44dcc5b2cb5a",
-                    "path": "<AttitudeSensor>/attitude",
+                    "path": "<Sensor>/attitude",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "Orientation",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "795bef42-74dd-4d79-8094-511fefe11efa",
-                    "path": "<XRHMD>/deviceRotation",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
+                    "groups": "Gyro",
                     "action": "Orientation",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -53,7 +42,7 @@
                     "path": "<Touchscreen>/delta",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Touch",
                     "action": "Swipe",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -61,5 +50,33 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Gyro",
+            "bindingGroup": "Gyro",
+            "devices": [
+                {
+                    "devicePath": "<AttitudeSensor>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "VR",
+            "bindingGroup": "VR",
+            "devices": [
+                {
+                    "devicePath": "<PXR_HMD>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Touch",
+            "bindingGroup": "Touch",
+            "devices": []
+        }
+    ]
 }

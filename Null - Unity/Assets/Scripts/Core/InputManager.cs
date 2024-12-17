@@ -13,8 +13,6 @@ public class InputManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InputSystem.EnableDevice(AttitudeSensor.current);
-        input.actionEvents[0].AddListener(OnOrientation);
         input.actionEvents[1].AddListener(OnSwipe);
     }
 
@@ -29,9 +27,12 @@ public class InputManager : MonoBehaviour
         {
             if (!AttitudeSensor.current.enabled)
             {
-
-
+                Debug.Log("Enabling Attitude sensor");
                 InputSystem.EnableDevice(AttitudeSensor.current);
+                Debug.Log("Subscribing to event");
+                Debug.Log(input.actionEvents);
+                input.actionEvents[0].AddListener(OnOrientation);
+
             }
         }
     }
