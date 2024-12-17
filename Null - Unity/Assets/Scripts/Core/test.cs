@@ -13,6 +13,7 @@ public class test : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        InputSystem.EnableDevice(AttitudeSensor.current);
         input.actionEvents[0].AddListener(OnOrientation);
         input.actionEvents[1].AddListener(OnSwipe);
     }
