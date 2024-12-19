@@ -6,7 +6,6 @@ public class PlayerBody : MonoBehaviour
 
     [SerializeField] private Transform playerHead;
 
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

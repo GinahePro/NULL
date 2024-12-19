@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // TODO : Make it only execute once at start AFTER the Unity remote connections
         if (AttitudeSensor.current == null)
         {
             Debug.Log("Not connected");
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator DelayStartup() { }
+    #region Action Event Listeners
 
     private void OnOrientation(InputAction.CallbackContext ctx)
     {
@@ -45,4 +46,5 @@ public class PlayerController : MonoBehaviour
         Vector2 inputValue = ctx.ReadValue<Vector2>();
     }
 
+    #endregion
 }
